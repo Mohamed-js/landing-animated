@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyRocky</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://myrocky.ca/wp-content/uploads/cropped-2-2-100x100-1-48x48.png"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      main {
+        height: 100vh; /* Set the height for scroll snap to work */
+        overflow-y: scroll; /* Enable vertical scrolling */
+        scroll-snap-type: y mandatory; /* Standard syntax */
+        -webkit-scroll-snap-type: y mandatory; /* Safari */
+        -ms-scroll-snap-type: y mandatory; /* IE */
+      }
+
+      .cover,
+      .links {
+        scroll-snap-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="">
+      <!-- cover section -->
+      <div
+        class="cover relative h-[100vh] overflow-hidden"
+        date-page="0"
+        id="cover"
+      >
+        <video
+          class="absolute inset-0 z-10 object-cover h-full w-full"
+          loop
+          mute
+          autoplay
+          src="https://rockywp.s3.ca-central-1.amazonaws.com/wp-content/uploads/video/FINAL_Funny_Desktop.mp4"
+        ></video>
+        <div
+          class="absolute inset-0 z-20 bg-gradient-to-b from-black via-[#000000a1] to-[#371c00] backdrop-blur-sm"
+        ></div>
+        <div
+          class="z-30 relative text-gray-200 text-center flex flex-col items-center justify-center h-full max-w-7xl md:mx-auto md:items-start"
+        >
+          <h1 class="text-3xl font-bold md:text-4xl" data-aos="fade-right">
+            Welcome to
+          </h1>
+          <span
+            class="text-[#AE7E56] text-7xl block mb-5 font-bold md:text-[7rem]"
+            data-aos="fade-right"
+            data-aos-delay="400"
+            >MyRocky</span
+          >
+          <span class="text-3xl font-bold" data-aos="fade-right">
+            Your Comprehensive Wellness Partner.</span
+          >
+          <p
+            class="text-2xl mt-10"
+            data-aos="fade-up"
+            data-aos-delay="800"
+            data-aos-duration="1000"
+          >
+            Transforming Lives Through Holistic Care.
+          </p>
+
+          <button
+            data-aos="fade-up"
+            data-aos-delay="1200"
+            data-aos-duration="1300"
+            class="relative bg-black p-2 px-5 pb-3 rounded-full font-bold mt-10 md:text-3xl md:p-4 md:px-8 md:pb-5 flex items-center"
+            onclick="scrollToSection('links')"
+          >
+            Know more about us
+            <img
+              data-aos="fade-right"
+              data-aos-delay="2000"
+              data-aos-duration="500"
+              src="https://media1.giphy.com/media/Vs3Ux8NIMNEJ6zXGyv/giphy.gif"
+              alt="Take a tour"
+              class="absolute left-[-40%] top-[-130%] h-[100px] w-[100px] md:hidden"
+            />
+          </button>
+        </div>
+      </div>
+
+      <!-- Links section -->
+      <div
+        class="links relative h-[100vh] overflow-hidden"
+        date-page="0"
+        id="links"
+      >
+        <!-- <video
+          class="absolute inset-0 z-10 object-cover h-full w-full"
+          loop
+          mute
+          autoplay
+          src="https://myrocky-dev.testmg.us/wp-content/uploads/2023/10/Final-Web.mp4"
+        ></video> -->
+        <div
+          class="absolute inset-0 z-20 bg-gradient-to-b from-black via-[#000000a1] to-[#371c00] backdrop-blur-sm"
+          id="toppy"
+        ></div>
+        <div
+          class="z-30 relative text-gray-200 text-center flex flex-col items-center justify-center h-full"
+        >
+          <div
+            class="md:flex flex-col md:justify-between md:items-center w-full max-w-2xl text-center"
+          >
+            <a
+              href="#"
+              class="flex flex-col items-center md:flex-row justify-between w-full md:pr-[90px]"
+              ><h2 class="text-xl font-bold md:text-4xl w-full">
+                Find us <br />
+                on Instagram
+              </h2>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/198px-Instagram_logo_2016.svg.png?20210403190622"
+                alt="Instagram"
+                class="h-[80px] w-[80px] md:h-[100px] md:w-[100px] object-contain mt-5"
+            /></a>
+
+            <a
+              href="#"
+              class="flex flex-col items-center md:flex-row justify-between w-full md:pr-[90px]"
+              ><h2 class="text-xl font-bold mt-5 md:text-4xl w-full">
+                Have questions? <br />
+                Our FAQs
+              </h2>
+              <img
+                src="https://myrocky.ca/wp-content/uploads/cropped-2-2-100x100-1-48x48.png"
+                alt="FAQs"
+                class="h-[80px] w-[80px] md:h-[100px] md:w-[100px] object-contain mt-5 bg-white rounded-2xl p-5"
+            /></a>
+
+            <a
+              href="#"
+              class="flex flex-col items-center md:flex-row justify-between w-full md:pr-[90px]"
+              ><h2 class="text-xl font-bold mt-5 md:text-4xl w-full">
+                Thousands trust us! <br />
+                Our Trustpilot
+              </h2>
+              <img
+                src="https://logowik.com/content/uploads/images/trustpilot-stars9095.jpg"
+                alt="Trustpilot"
+                class="h-[80px] w-[80px] md:h-[100px] md:w-[100px] object-contain mt-5 bg-white rounded-2xl p-1"
+            /></a>
+          </div>
+
+          <!-- <button
+            data-aos-delay="1200"
+            data-aos-duration="1300"
+            class="relative bg-black p-2 px-5 rounded-full font-bold mt-10"
+            onclick="scrollToSection('cover')"
+          >
+            Go Up
+            <img
+              data-aos="fade-right"
+              data-aos-delay="2000"
+              data-aos-duration="500"
+              src="https://media1.giphy.com/media/Vs3Ux8NIMNEJ6zXGyv/giphy.gif"
+              alt="Take a tour"
+              class="absolute left-[-80%] top-[-130%] h-[100px] w-[100px]"
+            />
+          </button> -->
+        </div>
+      </div>
+    </main>
+    <script>
+      AOS.init();
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script>
+      VANTA.GLOBE({
+        el: "#toppy",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+      });
+    </script>
+  </body>
+</html>
