@@ -18,83 +18,109 @@
       href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      * {
+        font-family: "Encode Sans", sans-serif;
+      }
+
+      @media screen and (max-width: 768px) {
+        .white-image {
+          filter: brightness(100);
+        }
+      }
+    </style>
   </head>
 
-  <style>
-    * {
-      font-family: "Encode Sans", sans-serif;
-    }
-    .white-image {
-      filter: brightness(100);
-    }
-  </style>
   <body class="bg-black">
-    <main class="p-2">
-      <nav class="p-4 min-h-[50px] flex items-center justify-center">
-        <img
-          src="https://myrocky.ca/wp-content/uploads/2022/03/Rocky-Mens-Wellness-copy-4-1-300x120-1.png"
-          alt="Logo"
-          class="h-6 white-image"
-        />
-      </nav>
-      <div class="flex flex-col items-center justify-center pb-8">
-        <div class="grid grid-cols-3 gap-2 max-w-[260px]">
-          <img
-            src="./insta.png"
-            alt="Instagram"
-            class="w-[4rem] h-full object-contain p-2"
-          />
-          <p class="col-span-2 text-[#c5b9ab] font-bold text-lg self-center">
-            FIND US ON INSTAGRAM
-          </p>
+    <nav
+      class="p-4 h-[50px] md:h-[80px] flex items-center justify-center md:bg-[#c5b9ab]"
+    >
+      <img
+        src="https://myrocky.ca/wp-content/uploads/2022/03/Rocky-Mens-Wellness-copy-4-1-300x120-1.png"
+        alt="Logo"
+        class="h-6 md:h-10 white-image"
+      />
+    </nav>
+    <main
+      class="p-2 min-h-[calc(100vh-50px)] md:min-h-[calc(100vh-80px)] md:flex"
+    >
+      <div class="md:flex max-w-7xl mx-auto items-center justify-center">
+        <div>
+          <video
+            class="object-contain mx-auto w-[90%] rounded-2xl border border-[8px] mt-5 hidden md:block max-h-[470px]"
+            loop
+            mute
+            autoplay
+            src="https://rockywp.s3.ca-central-1.amazonaws.com/wp-content/uploads/video/FINAL_Funny_Desktop.mp4"
+          ></video>
         </div>
-        <div class="grid grid-cols-3 gap-2 max-w-[260px]">
-          <img
-            src="./trustpilot.png"
-            alt="Trustpilot"
-            class="w-[4rem] h-full object-contain p-2"
-          />
-          <p class="col-span-2 text-[#c5b9ab] font-bold text-lg self-center">
-            REVIEW US ON TRUSTPILOT
-          </p>
-        </div>
-        <div class="grid grid-cols-3 gap-2 max-w-[260px]">
-          <img
-            src="./faq.png"
-            alt="Instagram"
-            class="w-[4rem] h-full object-contain p-2"
-          />
-          <p class="col-span-2 text-[#c5b9ab] font-bold text-lg self-center">
-            HAVE QUESTIONS?<br />
-            OUR FAQS
-          </p>
-        </div>
-      </div>
-      <div class="flex justify-center">
-        <hr class="border-[#c5b9ab] w-[250px]" />
-      </div>
-      <q
-        class="text-white text-thin text-sm max-w-[280px] block mx-auto text-center pt-5"
-        >Thank you being part of team Rocky. Your feedback is everything to our
-        business. Please do not hesitate to reach out with any questions or
-        suggestions you may have.</q
-      >
-      <div class="grid grid-cols-3 gap-2 max-w-[260px] mx-auto mt-5">
-        <img
-          src="./aba-anton.png"
-          alt="Anton"
-          class="w-[4rem] w-[4rem] object-cover rounded-full border border-[3px]"
-        />
-        <div class="text-[#c5b9ab] col-span-2">
-          <h6 class="font-bold text-base">- Aba Anton</h6>
-          <p class="text-sm">Co-Founder & CEO</p>
-          <a href="mailto: aanton@myrocky.ca" class="underline text-sm"
-            >aanton@myrocky.ca</a
+        <div class="p-12 my-auto">
+          <div class="flex flex-col items-center justify-center pb-8">
+            <div class="grid grid-cols-3 gap-2 max-w-[260px]">
+              <img
+                src="./insta.png"
+                alt="Instagram"
+                class="w-[4rem] h-full object-contain p-2"
+              />
+              <p
+                class="col-span-2 text-[#c5b9ab] font-bold text-lg self-center"
+              >
+                FIND US ON INSTAGRAM
+              </p>
+            </div>
+            <div class="grid grid-cols-3 gap-2 max-w-[260px]">
+              <img
+                src="./trustpilot.png"
+                alt="Trustpilot"
+                class="w-[4rem] h-full object-contain p-2"
+              />
+              <p
+                class="col-span-2 text-[#c5b9ab] font-bold text-lg self-center"
+              >
+                REVIEW US ON TRUSTPILOT
+              </p>
+            </div>
+            <div class="grid grid-cols-3 gap-2 max-w-[260px]">
+              <img
+                src="./faq.png"
+                alt="Instagram"
+                class="w-[4rem] h-full object-contain p-2"
+              />
+              <p
+                class="col-span-2 text-[#c5b9ab] font-bold text-lg self-center"
+              >
+                HAVE QUESTIONS?<br />
+                OUR FAQS
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <hr class="border-[#c5b9ab] w-[250px]" />
+          </div>
+          <q
+            class="text-[#ded9d3] text-thin text-sm max-w-[280px] block mx-auto text-center pt-5"
+            >Thank you being part of team Rocky. Your feedback is everything to
+            our business. Please do not hesitate to reach out with any questions
+            or suggestions you may have.</q
           >
+          <div class="grid grid-cols-3 gap-2 max-w-[260px] mx-auto mt-5">
+            <img
+              src="./aba-anton.png"
+              alt="Anton"
+              class="w-[4rem] w-[4rem] object-cover rounded-full border border-[3px]"
+            />
+            <div class="text-[#c5b9ab] col-span-2">
+              <h6 class="font-bold text-base">- Aba Anton</h6>
+              <p class="text-sm">Co-Founder & CEO</p>
+              <a href="mailto: aanton@myrocky.ca" class="underline text-sm"
+                >aanton@myrocky.ca</a
+              >
+            </div>
+          </div>
         </div>
       </div>
       <video
-        class="object-contain max-w-[250px] mx-auto w-[90%] rounded-2xl border border-[4px] mt-5"
+        class="object-contain max-w-[250px] mx-auto w-[90%] rounded-2xl border border-[4px] mt-5 md:hidden"
         loop
         mute
         autoplay
